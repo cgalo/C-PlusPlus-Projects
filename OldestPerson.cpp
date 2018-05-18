@@ -1,6 +1,13 @@
+/*
+ * Written by: Carlos Galo
+ * Project: Oldest Person
+ *        Program will calculate oldest person given the input of the user. I'll need input of current age and [full] name
+ *        the person. It'll continue until user inputs "quit" (non-case sensitive) and it will terminate by giving output
+ *        of the name and age of the oldest person.
+ */
+
 #include <iostream>
 #include <string>
-
 using namespace std;
 
 string strToUpper (string S) {
