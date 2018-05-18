@@ -5,7 +5,6 @@
  *        the person. It'll continue until user inputs "quit" (non-case sensitive) and it will terminate by giving output
  *        of the name and age of the oldest person.
  */
-
 #include <iostream>
 #include <string>
 using namespace std;
