@@ -1,4 +1,10 @@
-
+/*
+ * Written by: Carlos Galo
+ * Project: Fastest Runner
+ *        Program that stores the names of the runners in an array. Prints the list of runners and times (given). Then prints 
+ *        the name of the fastest runner and his/her time (in hours and minutes). Also, find the second fastest runner. Print 
+ *        the name and his/her time (in hours and minutes).
+ */
 
 
 #include <iostream>
