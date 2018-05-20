@@ -1,4 +1,12 @@
+/*
+ * Written by: Carlos Galo
+ * Project: Reverse List
+ *          Program that reads in a series of positive integers terminated by -1. The values are stored in an array. The 
+ *          program then prints the values in reverse order as well as the average (to one decimal place).
+ */
+
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 void printArray (int list[], int size){
@@ -12,15 +20,14 @@ void reverse(int list[], int newList[], int size){
 
 int main(){
      cout << "Reverse list program for postive integers."  << endl
-          << "Note: To finish your list type \"-1\" \n" <<endl;
+          << "Note: To finish your list type \"-1\" \n"    << endl;
     int size(0), done(0), list[size];
-    double tot_sum;
+    double tot_sum, list[size];
     do{
         cout << "--Enter positive integer: ";
-        int temp_num;
+        double temp_num;
         cin  >> temp_num;
-        
-        if (temp_num != -1) {
+        if (temp_num  != -1) {
             list[size] = temp_num;
             tot_sum   += temp_num; 
             size++;
@@ -39,6 +46,9 @@ int main(){
     printArray(rev_list, size);
     cout << endl;
     
-    cout << "Average of the numbers in the list is: " << tot_sum/size << endl;
+    double avg = tot_sum/size;
+    
+    cout << "Average of the numbers in the list is: " << setprecision(1) << avg
+         << endl;
     return 0;
 }
