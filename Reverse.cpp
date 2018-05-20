@@ -1,5 +1,3 @@
-
-
 #include <iostream>
 using namespace std;
 
@@ -8,16 +6,17 @@ void printArray (int list[], int size){
         cout << list[i] << " ";
 }
 void reverse(int list[], int newList[], int size){
-    for (int i = 0, j = size - 1; i < size; i++, j--){
+    for (int i = 0, j = size - 1; i < size; i++, j--)
         newList[j] = list [i];
-    }
 }
 
 int main(){
+     cout << "Reverse list program for postive integers."  << endl
+          << "Note: To finish your list type \"-1\" \n" <<endl;
     int size(0), done(0), list[size];
-    double tot_sum(0);
+    double tot_sum;
     do{
-        cout << "Enter positive integer: ";
+        cout << "--Enter positive integer: ";
         int temp_num;
         cin  >> temp_num;
         
@@ -26,7 +25,7 @@ int main(){
             tot_sum   += temp_num; 
             size++;
         }
-        else done  = 1;
+        else done  = 1 ;
     } while (done == 0);
     
     int rev_list[size];
