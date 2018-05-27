@@ -8,6 +8,7 @@
  *         test generates two random single digit number to form a question for
  *         addition, subtraction, multiplication, or division. 
  */
+
 #include <iostream>
 #include <cstdlib>
 using namespace std;
@@ -68,8 +69,11 @@ int main(){
              << "Enter a choice: ";
         int     choice;
         cin  >> choice;
-        int random_1 = rand() % 10;
-        int random_2 = rand() % 10;
+        int random_1(0), random_2(1);
+        while (random_1 < random_2){
+            random_1 = rand() % 10;
+            random_2 = rand() % 10;
+        }
         switch (choice){
             case 1: addition       (random_1,random_2); break;
             case 2: subtraction    (random_1,random_2); break;
@@ -82,3 +86,4 @@ int main(){
     
     return 0;
 }
+
