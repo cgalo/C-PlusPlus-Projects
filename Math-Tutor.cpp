@@ -8,7 +8,6 @@
  *         test generates two random single digit number to form a question for
  *         addition, subtraction, multiplication, or division. 
  */
-
 #include <iostream>
 #include <cstdlib>
 using namespace std;
@@ -21,8 +20,7 @@ void addition (int random_1, int random_2){
     if (answer == add)
         cout << "Correct\n" << endl;
     else 
-        cout << "Your answer is wrong. The correct answer is " << add << "\n"
-             << endl;
+        cout << "Your answer is wrong. The correct answer is " << add << "\n";
 }
 
 void subtraction (int random_1, int random_2){
@@ -63,6 +61,7 @@ void division (int random_1, int random_2){
 
 int main(){
     int done(0);
+    cout << "Math Tutor Program\n" << endl;
     do {
         cout << "Main Menu\n"         << "1: Addition\n" << "2: Subtraction\n" 
              << "3: Multiplication\n" << "4: Division\n" << "5: Exit\n" 
@@ -79,11 +78,8 @@ int main(){
             case 2: subtraction    (random_1,random_2); break;
             case 3: multiplication (random_1,random_2); break;
             case 4: division       (random_1,random_2); break;
-            case 5: done = 5;
+            case 5: cout << "You excited the program" << endl; done = 5;
         }
-        
-    }while (done != 5);
-    
+    }while (done != 5);    
     return 0;
 }
-
