@@ -13,7 +13,6 @@ string strToUpper (string S) {
     for (size_t i=0; i < S.length(); i++) S[i] = toupper(S[i]);
     return S; 
 }
-
 int main(){
     cout << "Program helps finding out oldest person\n" 
          << "To quit program type QUIT" << endl;
@@ -26,7 +25,6 @@ int main(){
         getline (cin >> ws, name);
         name = strToUpper  (name);                      
         done = name.compare("QUIT");
-        
         if (done){
             cout << "Enter age: ";
             int age;
